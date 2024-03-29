@@ -1,0 +1,122 @@
+/* static/css/style.css */
+/* Reset styles */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    z-index: 1; /* Ensure content is above the background */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+}
+
+/* Background image */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #f0f0f0; /* Set a light background color */
+}
+
+/* Background box */
+.background-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1; /* Ensure background box is behind other content */
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Set pitch black color for all text and input fields */
+h1,
+label,
+input[type="number"],
+select,
+input[type="submit"],
+.popup-content,
+input[type="text"] {
+    color: #000; /* Pitch black color */
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels */
+label {
+    color: #000; /* Pitch black color */
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+input[type="number"],
+select {
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Popup */
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(194, 203, 207, 0.977); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* White text color */
+    z-index: 2; /* Ensure popup is above the background */
+    display: none;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
